@@ -22,7 +22,7 @@
   <meta property="og:title" content="Muhammad Bilal Noor | .NET &amp; Web API Developer" />
   <meta property="og:description" content=".NET and Web API Developer based in Islamabad, Pakistan." />
   <meta property="og:url" content="https://mbilalnoor.github.io/" />
-  <meta property="og:image" content="https://mbilalnoor.github.io/images/profile.jpg" />
+  <meta property="og:image" content="https://mbilalnoor.github.io/images/Profile.jpeg" />
   <meta name="twitter:card" content="summary" />
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234B34D0'/%3E%3Ctext x='50' y='66' font-family='Arial' font-weight='700' font-size='44' fill='white' text-anchor='middle'%3EBN%3C/text%3E%3C/svg%3E" />
@@ -34,7 +34,7 @@
     "name": "Muhammad Bilal Noor",
     "jobTitle": ".NET & Web API Developer",
     "url": "https://mbilalnoor.github.io/",
-    "image": "https://mbilalnoor.github.io/images/profile.jpg",
+    "image": "https://mbilalnoor.github.io/images/Profile.jpeg",
     "email": "mailto:bilalnoorofficial@gmail.com",
     "worksFor": { "@type": "Organization", "name": "Komatsu Pakistan Soft" },
     "address": { "@type": "PostalAddress", "addressLocality": "Islamabad", "addressCountry": "PK" },
@@ -106,9 +106,9 @@
     </div>
 
     <div class="hero-photo">
-      <!-- PROFILE PHOTO: upload your picture to images/profile.jpg in the repo -->
-      <img src="images/profile.jpg" alt="Portrait of Muhammad Bilal Noor"
-           width="480" height="600" onerror="this.parentElement.classList.add('no-photo')" />
+      <!-- PROFILE PHOTO: images/Profile.jpeg (falls back to Profile.jpeg in repo root). Name is case-sensitive. -->
+      <img src="images/Profile.jpeg" alt="Portrait of Muhammad Bilal Noor" width="480" height="600"
+           onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='Profile.jpeg';}else{this.parentElement.classList.add('no-photo');}" />
       <span class="photo-fallback" aria-hidden="true">BN</span>
     </div>
   </div>
@@ -193,40 +193,50 @@
   <div class="container">
     <header class="section-head">
       <h2>Selected projects</h2>
-      <p>Work I've designed and built end to end.</p>
+      <p>Portals and applications I've designed and built.</p>
     </header>
 
     <div class="projects">
       <article class="project">
-        <p class="project-kind">MS thesis</p>
-        <h3>CyberQuest</h3>
-        <p>A gamified platform for learning cybersecurity through challenges and progress tracking.</p>
-        <ul class="tags"><li>ASP.NET Core 8 MVC</li><li>C#</li><li>SQL Server</li></ul>
-        <!-- PROJECT LINK: replace # with the repo or demo URL -->
-        <a class="project-link" href="#">View project</a>
-      </article>
-
-      <article class="project">
-        <p class="project-kind">Komatsu</p>
-        <h3>Meeting room check-in &amp; auto-release</h3>
-        <p>Frees booked rooms automatically when nobody checks in, so no-show meetings stop blocking space.</p>
-        <ul class="tags"><li>.NET</li><li>Microsoft Teams</li><li>Exchange</li></ul>
+        <p class="project-kind">Pakistan Engineering Council</p>
+        <h3>E-Gateway portal redesign</h3>
+        <p>Revamped the design of PEC's E-Gateway portal, increasing user engagement by 30%.</p>
+        <ul class="tags"><li>ASP.NET</li><li>UI redesign</li></ul>
       </article>
 
       <article class="project">
         <p class="project-kind">Pakistan Engineering Council</p>
-        <h3>PEC web portals</h3>
-        <p>Constructor Operator, STEM and GIT portals, plus the E-Gateway redesign that lifted engagement by 30%.</p>
-        <ul class="tags"><li>.NET Core</li><li>ASP.NET</li><li>C#</li><li>SQL Server</li></ul>
+        <h3>Constructor Operator Portal</h3>
+        <p>Developed the Constructor Operator Portal for PEC.</p>
+        <ul class="tags"><li>.NET Core</li><li>C#</li></ul>
+      </article>
+
+      <article class="project">
+        <p class="project-kind">Pakistan Engineering Council</p>
+        <h3>STEM Portal</h3>
+        <p>Developed the STEM Portal for PEC.</p>
+        <ul class="tags"><li>.NET Core</li><li>C#</li></ul>
+      </article>
+
+      <article class="project">
+        <p class="project-kind">Pakistan Engineering Council</p>
+        <h3>GIT Portal</h3>
+        <p>Designed and developed the GIT portal and managed the GIT program for timely delivery.</p>
+        <ul class="tags"><li>ASP.NET</li><li>C#</li></ul>
+      </article>
+
+      <article class="project">
+        <p class="project-kind">Topfinalyst Consulting</p>
+        <h3>Desktop application with reporting</h3>
+        <p>Designed and built a desktop application with integrated Crystal Reports and RDLC reports.</p>
+        <ul class="tags"><li>.NET</li><li>C#</li><li>SQL Server</li><li>Crystal Reports</li><li>RDLC</li></ul>
       </article>
 
       <article class="project">
         <p class="project-kind">BS final year project</p>
-        <h3>Fruit disease detection &amp; grading</h3>
-        <p>An ASP.NET web app that uses machine learning models to classify fruit diseases and grade quality.</p>
+        <h3>Fruit Diseases Detection &amp; Grading System</h3>
+        <p>ASP.NET web app integrating ML models for disease classification and grading, with SQL Server for data management.</p>
         <ul class="tags"><li>ASP.NET</li><li>Machine learning</li><li>SQL Server</li></ul>
-        <!-- PROJECT LINK: replace # with the repo or demo URL -->
-        <a class="project-link" href="#">View project</a>
       </article>
     </div>
   </div>
