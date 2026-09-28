@@ -187,7 +187,7 @@ ul, ol { margin: 0; padding: 0; }
 .job li::marker { color: var(--accent); }
 
 /* ============ PROJECTS ============ */
-.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .project {
   display: flex; flex-direction: column; gap: .6rem;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
@@ -283,6 +283,7 @@ ul, ol { margin: 0; padding: 0; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-photo { order: -1; justify-self: start; max-width: 260px; }
   .facts { grid-template-columns: 1fr 1fr; }
+  .projects { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
